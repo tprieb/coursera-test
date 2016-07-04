@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*-------------- Base Styles --------------*/
+body {
+	background-color: #E9E8E8;
+}
+
+h1 {
+	background-color: #E9E8E8;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	padding: 0.5em 0em 0.5em 0em;
+}
+
+#content {
+	background-color: #DAF2ED;
+	position: relative;
+	align-content: center;
+}
+
+div.products {
+	float: left;
+	background-color: #DAF2ED;
+	min-width: 50px;
+	min-height: 50px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid white;
+}
+
+.products h3 {
+	text-align: right;
+	margin-right: 15px;
+
+}
+.products p {
+	min-width: 100px;
+	min-height: 100px;
+	margin: 10px;
+}
+
+/*-------------- Desktop View --------------*/
+
+@media (min-width: 992px) {
+	.products{
+		width: 30%;
+	}
+}
+
+/*-------------- Tablet View --------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.products:nth-child(3) {
+		width: 92.5%;
+	}
+
+	.products {
+		width: 45%;
+	}
+}
+
+/*-------------- Mobile View --------------*/
+
+@media (max-width: 767px) {
+	.products {
+		width: 90%;
+	}
+}
